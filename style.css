@@ -1,0 +1,112 @@
+:root {
+  --Loader-color: #030303;
+}
+
+/* CSS Boilerplate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Plain Light";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Loader */
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: var(--Loader-color);
+  padding: 14vw 10vw;
+}
+
+#loader .line {
+  /* background-color: bisque; */
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  gap: 1.6vh;
+}
+
+#loader #line1-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6vh;
+}
+
+#loader #line1-part1 h5,
+#loader #line1-part1 h6 {
+  font-size: 3vw;
+  font-family: "silk serif";
+  font-weight: 100;
+}
+#loader #line1-part1 h5 {
+  width: 10vh;
+  text-align: right;
+  /* background-color: red; */
+}
+#loader .line h1,
+#loader .line h2 {
+  font-size: 7vw;
+  font-weight: 500;
+}
+.line h2 {
+  line-height: 2.5px;
+  /* background-color: red; */
+  animation-name:anime ;
+  animation-duration: 2.6s;
+  animation-iteration-count: infinite;
+}
+/* CSS Animation for .line h2 NOW  */
+@keyframes anime {
+  0% {
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 300;
+    opacity: 1;
+  }
+  47% {
+    font-family: "plain light";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 300;
+    opacity: 0;
+  }
+  50% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    color: #fff;
+    font-weight: 300;
+    opacity: 1;
+  }
+  100% {
+    font-family: "silk serif";
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 300;
+    opacity: 0;
+  }
+}
+/* Main Wrapper */
+#main {
+  position: relative;
+  background-color: red;
+}
+
+#page1 {
+  height: 100vh;
+  background-color: #151515;
+  position: relative;
+}
